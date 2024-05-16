@@ -11,5 +11,10 @@ namespace probni1
         {
             MessageBox.Show("Dobar dan");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("JEJJJJJ!");
+        }
     }
 }
