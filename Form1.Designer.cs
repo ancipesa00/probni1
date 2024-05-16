@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             button2 = new Button();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // button1
@@ -53,12 +54,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(217, 136);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(367, 199);
+            listBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(listBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
@@ -70,5 +81,6 @@
 
         private Button button1;
         private Button button2;
+        private ListBox listBox1;
     }
 }
